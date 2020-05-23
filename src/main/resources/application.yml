@@ -1,0 +1,32 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    spring:
+      thymeleaf:
+        suffix: .html
+        cache: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/itembankmanagement?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect   #设置数据库表引擎，不写的话无法设置外键
+  jackson:
+#    time-zone: GMT-8
+#    date-format: yyyy-MM-dd HH:mm:ss
+server:
+  port: 8080
+
+
+posyspath: 'd:/lic/'
+popassword: 111111
+  ########################################################
+  ###THYMELEAF (ThymeleafAutoConfiguration)
+  ########################################################
+
+
